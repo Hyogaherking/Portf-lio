@@ -61,7 +61,7 @@ header {
 }
 
 .logo .logo-text {
-    font-size: 24px;
+    font-size: 20px; /* Tamanho médio no desktop */
     font-weight: 500;
     color: #fff;
 }
