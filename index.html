@@ -1,90 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Gabriel Filadelfo</title>
-  <link rel="icon" href="Imgs/Design sem nome.png" type="image/png">
-  <link rel="stylesheet" href="Portifolio.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="icon" href="Imgs/Design sem nome.png" type="image/png" />
+  <link rel="stylesheet" href="Portifolio.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  />
 </head>
 <body>
   <div class="hero-header">
     <div class="wrapper">
       <header>
-        <div class="logo" style="cursor: pointer;" onclick="location.reload()">
+        <div
+          class="logo"
+          style="cursor: pointer;"
+          onclick="location.reload()"
+          title="Recarregar página"
+        >
           <i class="fa-solid fa-g"></i>
           <div class="logo-text">Gabriel Filadelfo</div>
         </div>
         <nav>
-          <div class="togglebtn">
+          <div class="togglebtn" aria-label="Menu" role="button" tabindex="0">
             <span></span>
             <span></span>
             <span></span>
           </div>
           <ul class="navlinks">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Shortly</a></li>
-            <li><a href="#">Shortly</a></li>
-            <li><a href="#">Shortly</a></li>
-            <li><a href="#">Shortly</a></li>
+            <li><a href="#">In the future</a></li>
+            <li><a href="#">In the future</a></li>
+            <li><a href="#">In the future</a></li>
+            <li><a href="#">In the future</a></li>
           </ul>
         </nav>
       </header>
 
       <div class="container">
         <div class="hero-pic">
-          <img src="Imgs/6e13b407-f3da-4e11-8136-52577be891f3.jpg" alt="profile pic">
+          <img
+            src="Imgs/6e13b407-f3da-4e11-8136-52577be891f3.jpg"
+            alt="Foto de perfil Gabriel Filadelfo"
+          />
         </div>
         <div class="hero-text">
-          <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+          <h5>
+            Hi, I'm
+            <span class="typed-effect"></span>
+          </h5>
           <h1>Gabriel Filadelfo</h1>
-          <p>Bem-vindo ao meu portfólio! Sou analista e desenvolvedor de software e gosto de criar soluções digitais que transformam ideias em realidade.
-            Acredito que a tecnologia tem o poder de mudar o mundo, e estou determinado a fazer parte dessa transformação.
+          <p>
+            Bem-vindo ao meu portfólio! Sou analista e desenvolvedor de software
+            e gosto de criar soluções digitais que transformam ideias em realidade.
+            Acredito que a tecnologia tem o poder de mudar o mundo, e estou
+            determinado a fazer parte dessa transformação.
             Vamos juntos construir o futuro, um código por vez!
           </p>
 
           <div class="btn-group">
-            <a href="Doc/Gabriel Filadelfo.pdf" class="btn active" download>Download CV</a>
-            <a href="https://wa.me/5514997966931" class="btn" target="_blank">Contact</a>
+            <a href="Doc/Gabriel Filadelfo.pdf" class="btn active" download
+              >Download CV</a
+            >
+            <a href="https://wa.me/5514997966931" class="btn" target="_blank"
+              >Contact</a
+            >
           </div>
 
           <div class="social">
-            <a href="https://www.linkedin.com/in/gabriel-filadelfo-201bbb2b7/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/gabr1el_filadelfo?igsh=dmFyY3B3cGpqY2tv"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://discord.com/channels/@b1el0403"><i class="fa-brands fa-discord fa-spin"></i></a>
-            <a href="https://open.spotify.com/user/2nmcobent07h0elcz6x8rl3l4?si=ff7051c6e1c844e7"><i class="fa-brands fa-spotify"></i></a>
+            <a
+              href="https://www.linkedin.com/in/gabriel-filadelfo-201bbb2b7/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/gabr1el_filadelfo?igsh=dmFyY3B3cGpqY2tv"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://discord.com/channels/@b1el0403" target="_blank"
+              ><i class="fa-brands fa-discord fa-spin"></i
+            ></a>
+            <a
+              href="https://open.spotify.com/user/2nmcobent07h0elcz6x8rl3l4?si=ff7051c6e1c844e7"
+              target="_blank"
+              ><i class="fa-brands fa-spotify"></i
+            ></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- typed.js para o efeito de digitação -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-  <script>
-    // Botão do menu hamburguer
-    var togglebtn = document.querySelector(".togglebtn");
-    var nav = document.querySelector(".navlinks");
-
-    togglebtn.addEventListener("click", function () {
-      this.classList.toggle("click");
-      nav.classList.toggle("open");
-    });
-
-    // Efeito de digitação
-    var typed = new Typed(".input", {
-      strings: ["Frontend Developer", "Digital Game Programmer", "Systems Analyst and Developer"],
-      typeSpeed: 70,
-      backSpeed: 55,
-      loop: true
-    });
-  </script>
   <footer class="footer">
     <div class="wrapper">
       <p>&copy; 2025 Gabriel Filadelfo. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <!-- typed.js para o efeito de digitação -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  <script>
+    // Botão do menu hamburguer
+    const togglebtn = document.querySelector(".togglebtn");
+    const nav = document.querySelector(".navlinks");
+
+    togglebtn.addEventListener("click", () => {
+      togglebtn.classList.toggle("click");
+      nav.classList.toggle("open");
+    });
+
+    // Efeito de digitação
+    var typed = new Typed(".typed-effect", {
+      strings: [
+        "Frontend Developer",
+        "Digital Game Programmer",
+        "Systems Analyst and Developer",
+      ],
+      typeSpeed: 70,
+      backSpeed: 55,
+      loop: true,
+      backDelay: 1500,
+      showCursor: true,
+      cursorChar: "|",
+    });
+  </script>
 </body>
 </html>
