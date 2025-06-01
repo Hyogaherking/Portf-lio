@@ -337,3 +337,63 @@ footer a:hover {
 footer p:hover {
     color: #A020F0;
 }
+
+.skills-section {
+  padding: 60px 20px;
+  background-color: #0d0d0d;
+  color: #fff;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px 25px;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: 0 0 8px #000;
+  transition: transform 0.2s ease;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+
+.skill h3 {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.skill p {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.skill {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px 25px;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: 0 0 8px #000;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  border-color: #A020F0; /* borda roxa no hover */
+}

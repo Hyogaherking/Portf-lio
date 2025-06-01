@@ -1,0 +1,10 @@
+[
+  { "nome": "HTML", "nivel": "Avançado" },
+  { "nome": "CSS", "nivel": "Intermediário" },
+  { "nome": "JavaScript", "nivel": "Intermediário" },
+  { "nome": "C#", "nivel": "Intermediário" },
+  { "nome": "C", "nivel": "Básico" },
+  { "nome": "MySQL", "nivel": "Básico" },
+  { "nome": "Git", "nivel": "Intermediário" },
+  { "nome": "Java", "nivel": "Básico" }
+]

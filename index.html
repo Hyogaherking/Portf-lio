@@ -95,7 +95,12 @@
       </div>
     </div>
   </div>
-
+  <section id="skills" class="skills-section">
+  <div class="wrapper">
+    <h2>Minhas Skills</h2>
+    <div id="skills-container" class="skills-container"></div>
+  </div>
+</section>
   <footer class="footer">
     <div class="wrapper">
       <p>&copy; 2025 Gabriel Filadelfo. Todos os direitos reservados.</p>
@@ -129,5 +134,23 @@
       cursorChar: "|",
     });
   </script>
+  <script>
+  fetch('skills.json')
+    .then(res => res.json())
+    .then(data => {
+      const skillsContainer = document.getElementById('skills-container');
+      data.forEach(skill => {
+        const div = document.createElement('div');
+        div.className = 'skill';
+        div.innerHTML = `
+          <h3>${skill.nome}</h3>
+          <p>Nível: ${skill.nivel}</p>
+        `;
+        skillsContainer.appendChild(div);
+      });
+    })
+    .catch(err => console.error('Erro ao carregar skills:', err));
+</script>
+
 </body>
 </html>
